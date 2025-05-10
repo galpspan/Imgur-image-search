@@ -87,7 +87,7 @@ async function fetchImage(randomString) {
 async function getRandomImages() {
   const length = parseInt(stringLength.value, 10); // Длина строки
   const num = parseInt(numImages.value, 10);       // Сколько изображений нужно
-  const batchSize = 10; // Сколько одновременно пробуем загрузить
+  const batchSize = 10; // Сколько одновременно пробуем загрузить (можно изменить, но увеличение числа может привести к блокировке на имгуре, поиск картинок будет производится, но доступ к сайту заблокируется)
   let found = 0;
   let skipped = 0;
 
