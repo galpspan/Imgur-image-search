@@ -20,7 +20,7 @@
 1. Клонируйте репозиторий:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/galpspan/Imgur-image-search.git
    ```
 
 2. Откройте `index.html` в браузере.
