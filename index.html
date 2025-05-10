@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="a.png">
+    <title>do not use imgur</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="randomimage">
+      <div class="stuff">
+        <h2>Случайные картинки imgur</h2>
+        <label for="stringlength">Длина ссылки:</label>
+        <select id="stringlength" name="stringlength">
+          <option value="5">5</option>
+          <option value="7">7</option>
+        </select><br><br>
+        <label for="numimages">Количество картинок:</label>
+        <input type="number" id="numimages" name="numimages" min="1" max="100" value="1"><br>
+        <button id="numimages-1" type="button" onclick="document.getElementById('numimages').value = '1'">1</button>
+        <button id="numimages-10" type="button" onclick="document.getElementById('numimages').value = '10'">10</button>
+        <button id="numimages-25" type="button" onclick="document.getElementById('numimages').value = '25'">25</button>
+        <button id="numimages-50" type="button" onclick="document.getElementById('numimages').value = '50'">50</button>
+        <button id="numimages-100" type="button" onclick="document.getElementById('numimages').value = '100'">100</button>
+        <button id="numimages-200" type="button" onclick="document.getElementById('numimages').value = '200'">200</button>
+        <button id="numimages-300" type="button" onclick="document.getElementById('numimages').value = '300'">300</button>
+        <br>
+        <input type="button" id="get-image" value="Получить изображение" />
+        <h2>Таймер</h2>
+        <div id="timer">00:00:00:00</div><br>
+        <div id="image-count"></div><br>
+        <div id="images"></div><br>
+        <button id="scrollToTopBtn">Вверх</button>
+        <div id="done-block" style="display: none;">Готово!</div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
